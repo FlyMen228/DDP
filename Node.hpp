@@ -24,11 +24,11 @@ public:
         return data;
     }
 
-    Node* getLeft() {
+    Node getLeft() {
         return left;
     }
 
-    Node* getRight() {
+    Node getRight() {
         return right;
     }
 
