@@ -17,7 +17,7 @@ public:
 
     ~BST() = default;
 
-    void insert(KeyType key, DataType data) {
+    void insert(const KeyType& key, const DataType& data) {
         if (root == nullptr) {
             root = new Node(key, data);
             return;
@@ -38,7 +38,7 @@ public:
         *marker = new Node <KeyType, DataType> (key, data);
     }
 
-    DataType find(KeyType key) {
+    DataType find(const KeyType& key) {
         Node <KeyType, DataType>* marker = &root;
 
         while(marker) {
